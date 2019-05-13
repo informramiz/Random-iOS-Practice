@@ -22,13 +22,46 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoriteThingsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteThingsCell" id="tWg-eB-gSE" userLabel="Favorite Things Cell">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoriteThingsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteThingsCell" rowHeight="121" id="tWg-eB-gSE" userLabel="Favorite Things Cell" customClass="MyTableViewCell" customModule="RandomPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tWg-eB-gSE" id="AkM-5a-Ihl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-H2-JAP" userLabel="Title">
+                                                    <rect key="frame" x="20" y="24" width="256" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-sN-Le4">
+                                                    <rect key="frame" x="343" y="24" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pv-em-0au" userLabel="Sub Title">
+                                                    <rect key="frame" x="20" y="78" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6qL-H2-JAP" firstAttribute="top" secondItem="AkM-5a-Ihl" secondAttribute="topMargin" constant="13" id="1gY-CF-1S0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3Pv-em-0au" secondAttribute="bottom" constant="11" id="UOe-Yo-BiJ"/>
+                                                <constraint firstItem="aiK-sN-Le4" firstAttribute="leading" secondItem="6qL-H2-JAP" secondAttribute="trailing" constant="67" id="Vch-g8-aAR"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aiK-sN-Le4" secondAttribute="trailing" constant="2" id="nbg-cQ-thz"/>
+                                                <constraint firstItem="6qL-H2-JAP" firstAttribute="leading" secondItem="AkM-5a-Ihl" secondAttribute="leading" constant="20" id="nei-4f-W4a"/>
+                                                <constraint firstItem="3Pv-em-0au" firstAttribute="top" secondItem="aiK-sN-Le4" secondAttribute="bottom" constant="23" id="pPw-FW-NP9"/>
+                                                <constraint firstItem="3Pv-em-0au" firstAttribute="leading" secondItem="AkM-5a-Ihl" secondAttribute="leadingMargin" id="qQa-mL-IbE"/>
+                                                <constraint firstItem="aiK-sN-Le4" firstAttribute="top" secondItem="AkM-5a-Ihl" secondAttribute="topMargin" constant="13" id="qW6-VL-VJX"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Pv-em-0au" secondAttribute="trailing" constant="20" id="toR-i4-O1G"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="6qL-H2-JAP" id="FKc-n9-u1e"/>
+                                            <outlet property="mySwitch" destination="aiK-sN-Le4" id="Vew-lM-qFS"/>
+                                            <outlet property="subtitle" destination="3Pv-em-0au" id="3BR-kL-0bw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -48,6 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>

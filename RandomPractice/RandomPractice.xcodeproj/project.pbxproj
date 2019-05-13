@@ -12,6 +12,7 @@
 		18D74ABF228927AB00F7F761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D74ABD228927AB00F7F761 /* Main.storyboard */; };
 		18D74AC1228927AD00F7F761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D74AC0228927AD00F7F761 /* Assets.xcassets */; };
 		18D74AC4228927AD00F7F761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D74AC2228927AD00F7F761 /* LaunchScreen.storyboard */; };
+		18D74ACD228937C300F7F761 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D74ACC228937C300F7F761 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		18D74AC0228927AD00F7F761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D74AC3228927AD00F7F761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D74AC5228927AD00F7F761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D74ACC228937C300F7F761 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		18D74AB8228927AB00F7F761 /* RandomPractice */ = {
 			isa = PBXGroup;
 			children = (
+				18D74ACB2289374200F7F761 /* model */,
 				18D74AB9228927AB00F7F761 /* AppDelegate.swift */,
 				18D74ABB228927AB00F7F761 /* ViewController.swift */,
 				18D74ABD228927AB00F7F761 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				18D74AC5228927AD00F7F761 /* Info.plist */,
 			);
 			path = RandomPractice;
+			sourceTree = "<group>";
+		};
+		18D74ACB2289374200F7F761 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18D74ACC228937C300F7F761 /* MyTableViewCell.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				18D74ABC228927AB00F7F761 /* ViewController.swift in Sources */,
 				18D74ABA228927AB00F7F761 /* AppDelegate.swift in Sources */,
+				18D74ACD228937C300F7F761 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

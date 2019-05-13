@@ -30,9 +30,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingsCell")
-        tableViewCell?.textLabel?.text = favoriteThings[indexPath.row]
-        return tableViewCell!
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingsCell") as! MyTableViewCell
+        tableViewCell.label.text = favoriteThings[indexPath.row]
+        if (indexPath.row % 2 == 0) {
+            tableViewCell.mySwitch.isOn = false
+        }
+        return tableViewCell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
