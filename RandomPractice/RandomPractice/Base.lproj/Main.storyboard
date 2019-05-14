@@ -76,7 +76,7 @@
         <!--View Controller-->
         <scene sceneID="8WP-Xj-Vbm">
             <objects>
-                <viewController id="duJ-di-oXM" sceneMemberID="viewController">
+                <viewController id="duJ-di-oXM" customClass="ViewController" customModule="RandomPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00c-88-bk5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--View Controller-->
         <scene sceneID="jXr-cV-Igs">
             <objects>
-                <viewController id="eGO-4Y-jzK" sceneMemberID="viewController">
+                <viewController id="eGO-4Y-jzK" customClass="ViewController" customModule="RandomPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0IT-JX-7ey">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
