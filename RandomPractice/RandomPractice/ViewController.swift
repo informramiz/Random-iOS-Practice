@@ -8,38 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var tableView: UITableView!
-    
-    // MARK: Model
-    let favoriteThings = [
-        "Raindrops on roses",
-        "Whiskers on kittens",
-        "Bright copper kettles",
-        "Warm woolen mittens"
-    ]
-    
+class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //register data source and delegates for table view
-        tableView.dataSource = self
-        tableView.delegate = self
         // Do any additional setup after loading the view.
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingsCell") as! MyTableViewCell
-        tableViewCell.label.text = favoriteThings[indexPath.row]
-        if (indexPath.row % 2 == 0) {
-            tableViewCell.mySwitch.isOn = false
-        }
-        return tableViewCell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoriteThings.count
     }
 }
 
