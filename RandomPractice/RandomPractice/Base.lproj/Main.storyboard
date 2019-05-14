@@ -33,14 +33,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="An immense tiger wakes up in an empty room.  A door opens in the hallway...  What should she do?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ki-al-18p">
+                                <rect key="frame" x="20" y="104" width="374" height="135.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwY-49-E6I">
+                                <rect key="frame" x="96" y="760" width="222" height="30"/>
+                                <state key="normal" title="Leap through the door and roar?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu9-mQ-f6Q">
+                                <rect key="frame" x="68.5" y="798" width="277" height="30"/>
+                                <state key="normal" title="Stalk to the door and peak down hallway"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ki-al-18p" secondAttribute="trailing" constant="20" id="7eD-lL-DoW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pu9-mQ-f6Q" secondAttribute="bottom" constant="34" id="ACB-Zz-rRP"/>
+                            <constraint firstItem="8Ki-al-18p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J8u-HS-onF"/>
+                            <constraint firstItem="Pu9-mQ-f6Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mq5-He-dua"/>
+                            <constraint firstItem="MwY-49-E6I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R3L-f8-dfa"/>
+                            <constraint firstItem="8Ki-al-18p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="aah-Db-Ag6"/>
+                            <constraint firstItem="Pu9-mQ-f6Q" firstAttribute="top" secondItem="MwY-49-E6I" secondAttribute="bottom" constant="8" id="qeh-eT-Q9R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ERD-ZZ-bVZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="-12"/>
+            <point key="canvasLocation" x="-652.17391304347836" y="-12.053571428571429"/>
         </scene>
     </scenes>
 </document>
