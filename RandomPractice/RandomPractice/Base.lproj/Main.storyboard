@@ -43,10 +43,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwY-49-E6I">
                                 <rect key="frame" x="96" y="760" width="222" height="30"/>
                                 <state key="normal" title="Leap through the door and roar?"/>
+                                <connections>
+                                    <segue destination="duJ-di-oXM" kind="show" id="e8V-Ub-8WQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu9-mQ-f6Q">
                                 <rect key="frame" x="68.5" y="798" width="277" height="30"/>
                                 <state key="normal" title="Stalk to the door and peak down hallway"/>
+                                <connections>
+                                    <segue destination="eGO-4Y-jzK" kind="show" id="ayQ-Ra-yIb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,6 +72,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-652.17391304347836" y="-12.053571428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8WP-Xj-Vbm">
+            <objects>
+                <viewController id="duJ-di-oXM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00c-88-bk5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dMs-vF-cs0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2B-Eu-VkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="-137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jXr-cV-Igs">
+            <objects>
+                <viewController id="eGO-4Y-jzK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0IT-JX-7ey">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AcK-Dk-OIf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAO-GN-Wvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="554"/>
         </scene>
     </scenes>
 </document>
