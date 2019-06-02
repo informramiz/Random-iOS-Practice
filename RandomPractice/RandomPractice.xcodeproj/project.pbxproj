@@ -37,6 +37,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188AF91422A4993200B9BD4A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18D74ABD228927AB00F7F761 /* Main.storyboard */,
+				18D74AC0228927AD00F7F761 /* Assets.xcassets */,
+				18D74AC2228927AD00F7F761 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		188AF91522A4994300B9BD4A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				18D74ABB228927AB00F7F761 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		18D74AAD228927AB00F7F761 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +74,10 @@
 		18D74AB8228927AB00F7F761 /* RandomPractice */ = {
 			isa = PBXGroup;
 			children = (
+				188AF91522A4994300B9BD4A /* controller */,
+				188AF91422A4993200B9BD4A /* view */,
 				18D74ACB2289374200F7F761 /* model */,
 				18D74AB9228927AB00F7F761 /* AppDelegate.swift */,
-				18D74ABB228927AB00F7F761 /* ViewController.swift */,
-				18D74ABD228927AB00F7F761 /* Main.storyboard */,
-				18D74AC0228927AD00F7F761 /* Assets.xcassets */,
-				18D74AC2228927AD00F7F761 /* LaunchScreen.storyboard */,
 				18D74AC5228927AD00F7F761 /* Info.plist */,
 			);
 			path = RandomPractice;
