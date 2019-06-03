@@ -29,7 +29,7 @@ class ImageViewController: UIViewController {
             return
         }
         
-        loadImageUsingDataTask(imageUrl: imageUrl)
+        loadImageUsingDownloadTask(imageUrl: imageUrl)
     }
     
     private func loadImageUsingDataTask(imageUrl: URL) {
@@ -40,6 +40,29 @@ class ImageViewController: UIViewController {
             }
             
             let downloadedImage = UIImage(data: data)
+            //update the image on main thread
+            DispatchQueue.main.async {
+                self.imageView.image = downloadedImage
+            }
+        }
+        
+        //a task is created in a suspened state and to actually make the networ
+        //request we need to call task.resume()
+        task.resume()
+    }
+    
+    //download task loads the network data into a temporary file and returns the file location
+    private func loadImageUsingDownloadTask(imageUrl: URL) {
+        let task = URLSession.shared.downloadTask(with: imageUrl) { location, response, error in
+            guard let location = location else {
+                print("No data, there was an error")
+                return
+            }
+            
+            //temporary file where the image was loaded
+            print(location)
+            let imageData = try! Data(contentsOf: location)
+            let downloadedImage = UIImage(data: imageData)
             //update the image on main thread
             DispatchQueue.main.async {
                 self.imageView.image = downloadedImage
