@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYY-Ri-YyG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ynq-CQ-ZMd">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Image View Controller-->
+        <scene sceneID="KvW-b9-etf">
+            <objects>
+                <viewController id="ynq-CQ-ZMd" userLabel="Image View Controller" customClass="ImageViewController" customModule="RandomPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wwm-aO-TNs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SL-21-xGG">
+                                <rect key="frame" x="167" y="433" width="80" height="30"/>
+                                <state key="normal" title="Load Image"/>
+                                <connections>
+                                    <action selector="loadImage:" destination="ynq-CQ-ZMd" eventType="touchUpInside" id="5qh-tf-Ul5"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-Gk-I2t">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0SL-21-xGG" firstAttribute="centerY" secondItem="wwm-aO-TNs" secondAttribute="centerY" id="1qv-Et-cwO"/>
+                            <constraint firstItem="0SL-21-xGG" firstAttribute="centerX" secondItem="wwm-aO-TNs" secondAttribute="centerX" id="Axu-w9-3O8"/>
+                            <constraint firstItem="zSW-Gk-I2t" firstAttribute="bottom" secondItem="Pw4-uW-u9p" secondAttribute="bottom" id="YVe-5a-ZJi"/>
+                            <constraint firstItem="Pw4-uW-u9p" firstAttribute="trailing" secondItem="zSW-Gk-I2t" secondAttribute="trailing" constant="20" id="lWL-Gf-y5s"/>
+                            <constraint firstItem="zSW-Gk-I2t" firstAttribute="leading" secondItem="Pw4-uW-u9p" secondAttribute="leading" constant="20" id="of8-Rf-F3a"/>
+                            <constraint firstItem="zSW-Gk-I2t" firstAttribute="top" secondItem="Pw4-uW-u9p" secondAttribute="top" id="xiZ-kT-rNG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pw4-uW-u9p"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="zSW-Gk-I2t" id="wm6-dp-9lC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfc-Gk-Bxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1110.144927536232" y="-708.48214285714278"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jVl-xY-lT7">
             <objects>
