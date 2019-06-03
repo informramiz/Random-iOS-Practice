@@ -36,7 +36,10 @@ class ImageViewController: UIViewController {
             }
             
             let downloadedImage = UIImage(data: data)
-            self.imageView.image = downloadedImage
+            //update the image on main thread
+            DispatchQueue.main.async {
+                self.imageView.image = downloadedImage
+            }
         }
         
         //a task is created in a suspened state and to actually make the networ
