@@ -29,6 +29,10 @@ class ImageViewController: UIViewController {
             return
         }
         
+        loadImageUsingDataTask(imageUrl: imageUrl)
+    }
+    
+    private func loadImageUsingDataTask(imageUrl: URL) {
         let task = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
             guard let data = data else {
                 print("No data, there was an error")
