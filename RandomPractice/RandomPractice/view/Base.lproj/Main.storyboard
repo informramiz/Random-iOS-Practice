@@ -55,7 +55,30 @@
                     <view key="view" contentMode="scaleToFill" id="bYc-u0-iZD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ux9-LO-ThB">
+                                <rect key="frame" x="131" y="432.5" width="152.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxH-Vh-Dh3">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-aL-wxm">
+                                        <rect key="frame" x="103.5" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="onThemeChange:" destination="V0y-o8-Th4" eventType="valueChanged" id="osP-WR-SPA"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ux9-LO-ThB" firstAttribute="centerX" secondItem="bYc-u0-iZD" secondAttribute="centerX" id="IOf-H7-2P9"/>
+                            <constraint firstItem="ux9-LO-ThB" firstAttribute="centerY" secondItem="bYc-u0-iZD" secondAttribute="centerY" id="ZtS-Be-6ff"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eK5-Ha-EDZ"/>
                     </view>
                 </viewController>
