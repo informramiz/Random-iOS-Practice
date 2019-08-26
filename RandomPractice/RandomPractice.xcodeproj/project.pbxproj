@@ -42,6 +42,7 @@
 		188AF91422A4993200B9BD4A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				18D74ACC228937C300F7F761 /* MyTableViewCell.swift */,
 				18D74ABD228927AB00F7F761 /* Main.storyboard */,
 				18D74AC0228927AD00F7F761 /* Assets.xcassets */,
 				18D74AC2228927AD00F7F761 /* LaunchScreen.storyboard */,
@@ -89,7 +90,6 @@
 		18D74ACB2289374200F7F761 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				18D74ACC228937C300F7F761 /* MyTableViewCell.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
