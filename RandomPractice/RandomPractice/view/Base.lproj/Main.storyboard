@@ -81,6 +81,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eK5-Ha-EDZ"/>
                     </view>
+                    <connections>
+                        <outlet property="themeSwitchView" destination="mxT-aL-wxm" id="PFl-Vo-FtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZc-Ix-nff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

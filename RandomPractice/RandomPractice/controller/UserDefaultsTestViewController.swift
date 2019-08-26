@@ -9,13 +9,25 @@
 import UIKit
 
 class UserDefaultsTestViewController: UIViewController {
-
+    @IBOutlet weak var themeSwitchView: UISwitch!
+    
+    private func updateTheme() {
+        if MyUserDefaults.isDarkThemeOn() {
+            view.backgroundColor = UIColor.darkGray
+        } else {
+            view.backgroundColor = UIColor.white
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        themeSwitchView.isOn = MyUserDefaults.isDarkThemeOn()
+        updateTheme()
     }
     
     @IBAction func onThemeChange(_ sender: Any) {
-        
+        UserDefaults.standard.set(themeSwitchView.isOn, forKey: MyUserDefaults.UserDefaultsKeys.isDarkThemeOn.rawValue)
+        updateTheme()
     }
     
     /*

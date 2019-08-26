@@ -21,4 +21,8 @@ class MyUserDefaults {
             UserDefaults.standard.set(false, forKey: UserDefaultsKeys.isDarkThemeOn.rawValue)
         }
     }
+    
+    static func isDarkThemeOn() -> Bool {
+        return UserDefaults.standard.bool(forKey: UserDefaultsKeys.isDarkThemeOn.rawValue)
+    }
 }
